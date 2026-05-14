@@ -20,10 +20,10 @@ public class GestorHamburgueserias {
     }
 
     public void añadirHamburgueseria() {
-        String nombre = Validador.pedirTexto("Introduce el nombre de la hamburguesería:");
-        String ubicacion = Validador.pedirTexto("Introduce la ubicación:");
-        String especialidad = Validador.pedirTexto("Introduce la especialidad:");
-        int puntuacion = Validador.pedirPuntuacion("Introduce la puntuación del 1 al 5:");
+        String nombre = validador.pedirTexto("Introduce el nombre de la hamburguesería:");
+        String ubicacion = validador.pedirTexto("Introduce la ubicación:");
+        String especialidad = validador.pedirTexto("Introduce la especialidad:");
+        int puntuacion = validador.pedirPuntuacion("Introduce la puntuación del 1 al 5:");
 
         Hamburgueseria nueva = new Hamburgueseria(nombre, ubicacion, especialidad, puntuacion);
         hamburgueserias.add(nueva);
@@ -66,10 +66,10 @@ public class GestorHamburgueserias {
 
         Hamburgueseria hamburgueseria = hamburgueserias.get(indice);
 
-        String nuevoNombre = Validador.pedirTexto("Nuevo nombre:");
-        String nuevaUbicacion = Validador.pedirTexto("Nueva ubicación:");
-        String nuevaEspecialidad = Validador.pedirTexto("Nueva especialidad:");
-        int nuevaPuntuacion = Validador.pedirPuntuacion("Nueva puntuación del 1 al 5:");
+        String nuevoNombre = validador.pedirTexto("Nuevo nombre:");
+        String nuevaUbicacion = validador.pedirTexto("Nueva ubicación:");
+        String nuevaEspecialidad = validador.pedirTexto("Nueva especialidad:");
+        int nuevaPuntuacion = validador.pedirPuntuacion("Nueva puntuación del 1 al 5:");
 
         hamburgueseria.setNombre(nuevoNombre);
         hamburgueseria.setUbicacion(nuevaUbicacion);
